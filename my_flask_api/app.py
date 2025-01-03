@@ -52,3 +52,19 @@ def delete_user(user_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+import flask
+
+# This will print the Flask version when the app starts
+print(flask.__version__)
+
+# Your Flask app setup and routes follow
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run()
