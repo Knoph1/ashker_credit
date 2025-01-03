@@ -1,1 +1,3 @@
 web: gunicorn app:app
+
+web: gunicorn ashker_credit.wsgi --log-file -

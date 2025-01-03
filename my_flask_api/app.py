@@ -68,3 +68,14 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run()
+import os
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+
+# Configure the PostgreSQL URI
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/ashker_credit'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)

@@ -58,3 +58,8 @@ node_modules/
 *.bak
 *.swp
 *.swo
+
+db.sqlite3
+.env
+node_modules/
+build/
