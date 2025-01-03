@@ -1,1 +1,3 @@
 Flask==2.2.2
+
+pip freeze > requirements.txt
