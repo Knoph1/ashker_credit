@@ -6,5 +6,5 @@ services:
       POSTGRES_DB: ashker_credit
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
-    ports:
-      - "5432:5432"
+ports:
+  - "5432:5432"
