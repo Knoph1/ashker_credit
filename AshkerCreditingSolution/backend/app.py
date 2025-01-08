@@ -9,6 +9,9 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+# Access the HEROKU_API_KEY
+heroku_api_key = os.getenv('HEROKU_API_KEY')
+
 # Initialize Flask App
 app = Flask(__name__)
 CORS(app)
