@@ -1,5 +1,0 @@
-*.pyc
-__pycache__/
-instance/
-.env
-firebase-service-account.json
