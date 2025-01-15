@@ -1,0 +1,10 @@
+name: AshkerCreditSolution
+services:
+  - name: web
+    build_command: ""
+    run_command: "gunicorn ashker_credit_solution.wsgi"
+    source_dir: ./
+    http_port: 8000
+    envs:
+      - key: DJANGO_SETTINGS_MODULE
+        value: ashker_credit_solution.settings
